@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  DoMINo
+//  TabBarTest
 //
-//  Created by 송결 on 2021/12/25.
+//  Created by 송결 on 2021/11/28.
 //
 
 import UIKit
@@ -13,41 +13,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        window = UIWindow(windowScene: windowScene)
-        
-        let tabViewController = UITabBarController()
-        window?.rootViewController = tabViewController
-        window?.makeKeyAndVisible()
-        
-        let tabItem1 = UITabBarItem(title: "Category", image: UIImage(named: "domino's"), tag: 0)
-        let tabItem2 = UITabBarItem(title: "WishList", image: UIImage(named: "wishlist"), tag: 1)
-        
-        let categoryView = CategoryViewcontroller()
-        let wishListView = WishListViewcontrollerViewController()
-        
-        let navigationViewController1 = UINavigationController(rootViewController: categoryView)
-        let navigationViewController2 = UINavigationController(rootViewController: wishListView)
-        
-        tabViewController.setViewControllers([navigationViewController1, navigationViewController2], animated: true)
-        categoryView.tabBarItem = tabItem1
-        wishListView.tabBarItem = tabItem2
-        
-        navigationViewController1.navigationBar.topItem?.title = "Domino's"
-        navigationViewController2.navigationBar.topItem?.title = "Wish List"
-        
-    }
 
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+            window?.windowScene = windowScene
+            window?.makeKeyAndVisible()
+        
+            self.window = UIWindow(windowScene: windowScene)
+            // 루트 뷰 컨트롤러가 될 뷰컨트롤러 생성
+            let rootViewController = ViewController()
+            // 위에서 생성한 뷰 컨트롤러로 네비게이션 컨트롤러를 생성
+            let navigationController = UINavigationController(rootViewController: rootViewController)
+            // 윈도우의 루트 뷰 컨트롤러로 네비게이션 컨트롤러를 설정
+            self.window?.rootViewController = navigationController
+        
+        
+        
+        
+        
+        
+        
+        
+        }
+
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.

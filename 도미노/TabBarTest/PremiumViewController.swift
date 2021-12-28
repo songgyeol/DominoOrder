@@ -1,17 +1,17 @@
 //
-//  WishListViewcontrollerViewController.swift
-//  DoMINo
+//  PremiumViewController.swift
+//  TabBarTest
 //
-//  Created by 송결 on 2021/12/25.
+//  Created by 송결 on 2021/12/26.
 //
 
 import UIKit
 
-class WishListViewcontrollerViewController: UIViewController {
+class PremiumViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        view.backgroundColor = .blue
         // Do any additional setup after loading the view.
     }
     

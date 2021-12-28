@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DoMINo
+//  TabBarTest
 //
-//  Created by 송결 on 2021/12/25.
+//  Created by 송결 on 2021/11/28.
 //
 
 import UIKit
