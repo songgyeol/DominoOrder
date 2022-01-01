@@ -16,6 +16,7 @@
 		5025DB15275398500060C40C /* TabOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5025DB14275398500060C40C /* TabOneViewController.swift */; };
 		5025DB17275398560060C40C /* TabTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5025DB16275398560060C40C /* TabTwoViewController.swift */; };
 		5025DB1927539AF80060C40C /* CustomCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5025DB1827539AF80060C40C /* CustomCellTableViewCell.swift */; };
+		5053E07C278088290082DD48 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5053E07B278088290082DD48 /* ProductViewController.swift */; };
 		509E3D992771892700B113BF /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509E3D982771892700B113BF /* ProductTableViewCell.swift */; };
 		50FAE0C92777114000BFBAD5 /* SuperSeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FAE0C82777114000BFBAD5 /* SuperSeedViewController.swift */; };
 		50FAE0CB277896A200BFBAD5 /* PremiumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50FAE0CA277896A200BFBAD5 /* PremiumViewController.swift */; };
@@ -37,6 +38,7 @@
 		5025DB14275398500060C40C /* TabOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabOneViewController.swift; sourceTree = "<group>"; };
 		5025DB16275398560060C40C /* TabTwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabTwoViewController.swift; sourceTree = "<group>"; };
 		5025DB1827539AF80060C40C /* CustomCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCellTableViewCell.swift; sourceTree = "<group>"; };
+		5053E07B278088290082DD48 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		509E3D982771892700B113BF /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		50FAE0C82777114000BFBAD5 /* SuperSeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperSeedViewController.swift; sourceTree = "<group>"; };
 		50FAE0CA277896A200BFBAD5 /* PremiumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PremiumViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				5025DB1827539AF80060C40C /* CustomCellTableViewCell.swift */,
 				5025DB14275398500060C40C /* TabOneViewController.swift */,
 				5025DB16275398560060C40C /* TabTwoViewController.swift */,
+				5053E07B278088290082DD48 /* ProductViewController.swift */,
 				50FAE0C82777114000BFBAD5 /* SuperSeedViewController.swift */,
 				50FAE0CA277896A200BFBAD5 /* PremiumViewController.swift */,
 				50FAE0CC2778972200BFBAD5 /* ClasicViewController.swift */,
@@ -177,6 +180,7 @@
 				5025DB17275398560060C40C /* TabTwoViewController.swift in Sources */,
 				50FAE0D32778980D00BFBAD5 /* SauceViewController.swift in Sources */,
 				50FAE0CB277896A200BFBAD5 /* PremiumViewController.swift in Sources */,
+				5053E07C278088290082DD48 /* ProductViewController.swift in Sources */,
 				5025DB01275398400060C40C /* AppDelegate.swift in Sources */,
 				50FAE0CF2778976F00BFBAD5 /* SideDishViewController.swift in Sources */,
 				5025DB03275398400060C40C /* SceneDelegate.swift in Sources */,

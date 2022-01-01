@@ -11,6 +11,7 @@ class ProductTableViewCell: UITableViewCell {
     
     let productcell = UIImageView()
     let productLabel = UILabel()
+    let productSubLabel = UILabel()
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: UITableViewCell.CellStyle.subtitle, reuseIdentifier: reuseIdentifier)
@@ -23,7 +24,7 @@ class ProductTableViewCell: UITableViewCell {
     }
     
     func setUI() {
-        [productcell, productLabel].forEach { (view) in
+        [productcell, productLabel, productSubLabel].forEach { (view) in
             self.contentView.addSubview(view)
             view.translatesAutoresizingMaskIntoConstraints = false
             
@@ -37,9 +38,17 @@ class ProductTableViewCell: UITableViewCell {
             productLabel.trailingAnchor.constraint(equalTo: self.contentView.trailingAnchor),
             productLabel.centerYAnchor.constraint(equalTo: self.contentView.centerYAnchor),
             productLabel.heightAnchor.constraint(equalTo: self.contentView.heightAnchor)
-            
+           
         ])
         
         
     }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+    }
+
 }
