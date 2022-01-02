@@ -10,12 +10,13 @@ import UIKit
 class ProductViewController: UIViewController {
     
     let product: [Product] = [
-        Product(productTitle: "포테이토", productImg: UIImage(named: "포테이토.jpg")!, productSubText: "10,000원"),
-        Product(productTitle: "불고기", productImg: UIImage(named: "불고기.jpg")!, productSubText: "10,000원"),
-        Product(productTitle: "페퍼로니", productImg: UIImage(named: "페퍼로니.jpg")!, productSubText: "10,000원"),
-        Product(productTitle: "베이컨체더치즈", productImg: UIImage(named: "베이컨체더치즈.jpg")!, productSubText: "10,000원"),
-        Product(productTitle: "슈퍼슈프림", productImg: UIImage(named: "슈퍼슈프림.jpg")!, productSubText: "10,000원"),
-        Product(productTitle: "슈퍼디럭스", productImg: UIImage(named: "슈퍼디럭스.jpg")!, productSubText: "10,000원")
+        
+        Product(productCell: "포테이토.jpg", productLabel: "포테이토", productSubLabel: "10,000원")!,
+        Product(productCell: "불고기.jpg", productLabel: "불고기", productSubLabel: "10,000원원")!,
+        Product(productCell: "페퍼로니.jpg", productLabel: "페퍼로니", productSubLabel: "10,000원")!,
+        Product(productCell: "베이컨체더치즈.jpg", productLabel: "베이컨체더치즈", productSubLabel: "10,000원")!,
+        Product(productCell: "슈퍼슈프림.jpg", productLabel: "슈퍼슈프림", productSubLabel: "10,000원")!,
+        Product(productCell: "슈퍼디럭스.jpg", productLabel: "슈퍼디럭스", productSubLabel: "10,000원")!
     ]
     
 

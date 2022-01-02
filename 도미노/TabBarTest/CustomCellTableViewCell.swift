@@ -12,6 +12,11 @@ struct User {
     let mainMenu: UIImage
     // let name: String
 }
+struct Product {
+    var productCell: UIImage
+    var productLabel: String
+    var productSubLabel: String
+}
 
 class CustomCell: UITableViewCell {
     //아이디 선언

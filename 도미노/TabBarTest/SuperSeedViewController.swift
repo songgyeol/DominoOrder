@@ -23,7 +23,7 @@ class SuperSeedViewController: UIViewController {
 //        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //
 //            let cell = tableView.dequeueReusableCell(withIdentifier: CustomCell.cellId, for: indexPath) as! CustomCell
-//
+//'
 //            cell.mainMenu.image = user[indexPath.row].mainMenu
 //            // cell.name.text = user[indexPath.row].name
 //
