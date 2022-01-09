@@ -6,6 +6,7 @@
 //
 
 import UIKit
+//infp - mainstory 삭제, mianstory 파일 삭제
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
