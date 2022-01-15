@@ -14,6 +14,8 @@
 		503E15A32791BA15000C1918 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503E15A22791BA15000C1918 /* Assets.xcassets */; };
 		503E15A62791BA15000C1918 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 503E15A42791BA15000C1918 /* LaunchScreen.storyboard */; };
 		503E15AE2791BD50000C1918 /* WishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E15AD2791BD50000C1918 /* WishViewController.swift */; };
+		503E15B027928EAB000C1918 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E15AF27928EAB000C1918 /* Menu.swift */; };
+		503E15B227929021000C1918 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E15B127929021000C1918 /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		503E15A52791BA15000C1918 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		503E15A72791BA15000C1918 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503E15AD2791BD50000C1918 /* WishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishViewController.swift; sourceTree = "<group>"; };
+		503E15AF27928EAB000C1918 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		503E15B127929021000C1918 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 				503E159B2791BA14000C1918 /* SceneDelegate.swift */,
 				503E15AD2791BD50000C1918 /* WishViewController.swift */,
 				503E159D2791BA14000C1918 /* CategoryViewController.swift */,
+				503E15B127929021000C1918 /* CategoryCell.swift */,
+				503E15AF27928EAB000C1918 /* Menu.swift */,
 				503E159F2791BA14000C1918 /* Main.storyboard */,
 				503E15A22791BA15000C1918 /* Assets.xcassets */,
 				503E15A42791BA15000C1918 /* LaunchScreen.storyboard */,
@@ -145,6 +151,8 @@
 				503E15AE2791BD50000C1918 /* WishViewController.swift in Sources */,
 				503E159A2791BA14000C1918 /* AppDelegate.swift in Sources */,
 				503E159C2791BA14000C1918 /* SceneDelegate.swift in Sources */,
+				503E15B027928EAB000C1918 /* Menu.swift in Sources */,
+				503E15B227929021000C1918 /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

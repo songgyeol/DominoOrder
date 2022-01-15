@@ -9,14 +9,14 @@ import UIKit
 
 final class WishViewController: UIViewController {
     
-    //MARK: - Lifecycle
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setUI()
     }
 }
 
-//MARK: - UI
+// MARK: - UI
 extension WishViewController {
     private func setUI() {
         setBasic()
