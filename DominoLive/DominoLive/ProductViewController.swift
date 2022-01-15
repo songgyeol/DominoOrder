@@ -1,53 +1,54 @@
 //
-//  CategoryViewController.swift
+//  ProductViewController.swift
 //  DominoLive
 //
-//  Created by 송결 on 2022/01/14.
+//  Created by 송결 on 2022/01/15.
 //
 
 import UIKit
 
-import UIKit
+final class ProductViewController: UIViewController {
 
-final class CategoryViewController: UIViewController {
-    
     private let tableView = UITableView()
+    private var list = [String]()
+    
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .green
         setUI()
+    }
+}
+// MARK: - Helpers
+//카테고리에서 프로덕트뷰 연결된거 확인 후
+extension ProductViewController {
+    func set(categoryName: String) {
+        list = Menu().list[categoryName] ?? []  //??????
+        
     }
 }
 
 // MARK: - UITableViewDataSource
 //Delegate설정
-extension CategoryViewController: UITableViewDataSource {
+extension ProductViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //1. 처음 테스트 return 4
-        //2. 메뉴파일 만들고 설정, categorycell
-        //3.
-        return Menu().category.count
-        //4. ProductView 만들고 메뉴파일에 list 지정 후 설정??
-        //return Menu().list.keys.count??
+        //1. return Menu().category.count
+        //2. 카테고리에서 프로덕트뷰 연결된거 확인 후 return list.count
+        //3. 프로덕트 넘길때 리스트 말고 숫자로
+        return 5
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //처음설정 let cell = UITableViewCell()
-        //categoryCell 설정하고 바꾸기
-        let cell = CategoryCell()
-        //categorycell text
-        //처음설정 cell.textLabel?.text = Menu().category[indexPath.row]
-        //categoryCell 설정하고 바꾸기
-        cell.set(imageName: Menu().category[indexPath.row])
+        //let cell = CategoryCell()
+        let cell = ProductCell()
+        //cell.set(imageName: Menu().category[indexPath.row])
         return cell
     }
 }
  // MARK: - UITableViewDelegate
-//ProductView 연결
-extension CategoryViewController: UITableViewDelegate {
+extension ProductViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(Menu().category[indexPath.row])
         navigationController?.pushViewController(ProductViewController(), animated: true)
         
     }
@@ -55,7 +56,7 @@ extension CategoryViewController: UITableViewDelegate {
 
 
 // MARK: - UI
-extension CategoryViewController {
+extension ProductViewController {
     private func setUI() {
         setBasic()
         setLayout()
