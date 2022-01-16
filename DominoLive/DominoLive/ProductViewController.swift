@@ -16,7 +16,6 @@ final class ProductViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .green
         setUI()
     }
 }
@@ -25,6 +24,7 @@ final class ProductViewController: UIViewController {
 extension ProductViewController {
     func set(categoryName: String) {
         list = Menu().list[categoryName] ?? []  //??????
+        tableView.reloadData()
         
     }
 }
@@ -36,12 +36,14 @@ extension ProductViewController: UITableViewDataSource {
         //1. return Menu().category.count
         //2. 카테고리에서 프로덕트뷰 연결된거 확인 후 return list.count
         //3. 프로덕트 넘길때 리스트 말고 숫자로
-        return 5
+        return list.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         //let cell = CategoryCell()
         let cell = ProductCell()
+        let name = list[indexPath.row]
+        cell.set(imageName: name, title: name, price: "4000")
         //cell.set(imageName: Menu().category[indexPath.row])
         return cell
     }

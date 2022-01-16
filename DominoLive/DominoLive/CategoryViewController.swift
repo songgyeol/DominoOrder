@@ -47,8 +47,10 @@ extension CategoryViewController: UITableViewDataSource {
 //ProductView 연결
 extension CategoryViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(Menu().category[indexPath.row])
-        navigationController?.pushViewController(ProductViewController(), animated: true)
+        let productVC = ProductViewController()
+        let categoryName = (Menu().category[indexPath.row])
+        productVC.set(categoryName: categoryName)
+        navigationController?.pushViewController(productVC, animated: true)
         
     }
 }

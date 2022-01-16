@@ -28,6 +28,15 @@ final class ProductCell: UITableViewCell {
     }
 }
 
+// MARK: - Helpers
+extension ProductCell {
+    func set(imageName: String, title: String, price: String) {
+        productImageView.image = UIImage(named: imageName)
+        titleLabel.text = title
+        priceLabel.text = price + "원"
+    }
+}
+
 
 // MARK: - UI
 extension ProductCell {
@@ -37,24 +46,24 @@ extension ProductCell {
             contentView.addSubview($0)
             $0.translatesAutoresizingMaskIntoConstraints = false
         }
+        productImageView.contentMode = .scaleAspectFill
         
-        productImageView.image = UIImage(named: "불고기")
-        titleLabel.text = "aaa"
-        priceLabel.text = "bbb"
+
     }
     
     private func setLayout() {
         NSLayoutConstraint.activate([
             productImageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             productImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
-            productImageView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             productImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            productImageView.widthAnchor.constraint(equalToConstant: 80),
             
-            titleLabel.centerXAnchor.constraint(equalTo: productImageView.centerXAnchor, constant: -8),
-            titleLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 4),
+            titleLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+            titleLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 20),
+            
             
             priceLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 4),
-            priceLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 4)
+            priceLabel.leadingAnchor.constraint(equalTo: productImageView.trailingAnchor, constant: 20)
         ])
     }
     
