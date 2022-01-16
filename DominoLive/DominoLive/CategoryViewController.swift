@@ -51,7 +51,7 @@ extension CategoryViewController: UITableViewDelegate {
         let categoryName = (Menu().category[indexPath.row])
         productVC.set(categoryName: categoryName)
         navigationController?.pushViewController(productVC, animated: true)
-        
+        //keys는 순서가 존재하지 않는다 순서를 지정하기 위함(Menu, )
     }
 }
 

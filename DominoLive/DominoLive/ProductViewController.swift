@@ -10,7 +10,7 @@ import UIKit
 final class ProductViewController: UIViewController {
 
     private let tableView = UITableView()
-    private var list = [String]()
+    private var list = [String]() //빈 리스트 만들기, 비어 있는 리스트를 헬퍼에서 ->
     
     
     // MARK: - Lifecycle
@@ -22,7 +22,7 @@ final class ProductViewController: UIViewController {
 // MARK: - Helpers
 //카테고리에서 프로덕트뷰 연결된거 확인 후
 extension ProductViewController {
-    func set(categoryName: String) {
+    func set(categoryName: String) {// -> 클릭하면 셋을 통해 리스트로 전달하고 전달했으니까 테이블뷰로 리로드
         list = Menu().list[categoryName] ?? []  //??????
         tableView.reloadData()
         
@@ -51,8 +51,9 @@ extension ProductViewController: UITableViewDataSource {
  // MARK: - UITableViewDelegate
 extension ProductViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        navigationController?.pushViewController(ProductViewController(), animated: true)
-        
+        //DetailView 연결
+        //navigationController?.pushViewController(ProductViewController(), animated: true)
+        navigationController?.pushViewController(DetailViewController(), animated: true)
     }
 }
 

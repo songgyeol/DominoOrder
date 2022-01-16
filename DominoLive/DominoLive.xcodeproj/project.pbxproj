@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		503599352794525B008E96CA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503599342794525B008E96CA /* DetailViewController.swift */; };
+		5035993727945DF0008E96CA /* OrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5035993627945DF0008E96CA /* OrderManager.swift */; };
 		503E159A2791BA14000C1918 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E15992791BA14000C1918 /* AppDelegate.swift */; };
 		503E159C2791BA14000C1918 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E159B2791BA14000C1918 /* SceneDelegate.swift */; };
 		503E159E2791BA14000C1918 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503E159D2791BA14000C1918 /* CategoryViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		503599342794525B008E96CA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		5035993627945DF0008E96CA /* OrderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderManager.swift; sourceTree = "<group>"; };
 		503E15962791BA14000C1918 /* DominoLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DominoLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503E15992791BA14000C1918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		503E159B2791BA14000C1918 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +75,8 @@
 				503E15AD2791BD50000C1918 /* WishViewController.swift */,
 				503E159D2791BA14000C1918 /* CategoryViewController.swift */,
 				503E15B32792995E000C1918 /* ProductViewController.swift */,
+				503599342794525B008E96CA /* DetailViewController.swift */,
+				5035993627945DF0008E96CA /* OrderManager.swift */,
 				503E15B52792A2F5000C1918 /* ProductCell.swift */,
 				503E15B127929021000C1918 /* CategoryCell.swift */,
 				503E15AF27928EAB000C1918 /* Menu.swift */,
@@ -153,9 +159,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503599352794525B008E96CA /* DetailViewController.swift in Sources */,
 				503E159E2791BA14000C1918 /* CategoryViewController.swift in Sources */,
 				503E15AE2791BD50000C1918 /* WishViewController.swift in Sources */,
 				503E159A2791BA14000C1918 /* AppDelegate.swift in Sources */,
+				5035993727945DF0008E96CA /* OrderManager.swift in Sources */,
 				503E15B42792995E000C1918 /* ProductViewController.swift in Sources */,
 				503E159C2791BA14000C1918 /* SceneDelegate.swift in Sources */,
 				503E15B62792A2F5000C1918 /* ProductCell.swift in Sources */,
