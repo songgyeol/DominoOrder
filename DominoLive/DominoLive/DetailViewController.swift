@@ -37,6 +37,7 @@ extension DetailViewController {
         case subtractButton:
             //태스트 print("-")
             guard quantity > 0 else { return }
+            OrderManager.shared.removeItem(itemName: "불고기")
                 quantity -= 1
 // 위 가드문과 같은 값이지만 풀었을 때
 //            if quantity > 0 {
@@ -44,6 +45,7 @@ extension DetailViewController {
 //          }
         case addButton:
             //테스트 print("+")
+            OrderManager.shared.addItem(itemName: "불고기")
             quantity += 1
         default:
             fatalError()
